@@ -9,7 +9,7 @@ def df(x: float) -> float:
 
 
 def Optimizer(max_iterations: int, lr: float) -> float:
-    x = random.randn()
+    x = random.randint(0, 1)
     for i in range(max_iterations):
         dx = df(x)
         x -= lr * dx
